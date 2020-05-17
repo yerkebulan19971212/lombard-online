@@ -1,3 +1,8 @@
+# django imports
 from django.contrib import admin
 
-# Register your models here.
+# local import
+from .models import Category
+
+
+admin.site.register((Category, ))

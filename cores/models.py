@@ -21,3 +21,5 @@ class Category(models.Model):
         while parent:
             full_name_of_category.append(parent.title)
             parent = parent.parent
+
+        return "->".join(full_name_of_category)

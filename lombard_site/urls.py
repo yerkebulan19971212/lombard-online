@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # api version is first
-    path('api/v1', include('cores.urls'))
+    path('api/v1/', include('cores.urls'))
 ]

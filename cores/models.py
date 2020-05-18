@@ -1,7 +1,15 @@
+import uuid as uuid_lib
+
+# django imports
 from django.db import models
 
 
 class Category(models.Model):
+    uuid = models.UUIDField(
+        db_index=True,
+        default=uuid_lib.uuid4,
+        editable=False
+    )
     title = models.CharField(max_length=128)
     parent = models.ForeignKey(
         'self',

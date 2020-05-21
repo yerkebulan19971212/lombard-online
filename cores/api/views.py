@@ -1,5 +1,7 @@
+# import
 from rest_framework.generics import ListAPIView
 
+# local
 from ..models import Category
 from .serializers import CategoryListSerializer
 

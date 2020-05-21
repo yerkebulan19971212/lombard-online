@@ -1,5 +1,7 @@
+# rest framework imports
 from rest_framework.serializers import ModelSerializer, Serializer
 
+# local imports
 from ..models import Category
 
 
